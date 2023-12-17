@@ -1,5 +1,5 @@
-import basicLayout from "./pageLoad.js";
-
+import basicLayout from './pageLoad.js';
+import location from './location.js';
 
 export default function menu(){
     const container  = document.querySelector("#content");
@@ -12,9 +12,8 @@ export default function menu(){
     menuButton.style.left = "85px";
     container.appendChild(menuButton);
  
-    //removes text and images from the screen 
     menuButton.addEventListener("click", () => {
-        
+
         const image = document.querySelector("img");
         image.remove();
 

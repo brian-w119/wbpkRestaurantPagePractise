@@ -13,3 +13,4 @@ renderHomePage();
 import basicLayout from './pageLoad.js';
 basicLayout();
 
+import menuClicked from './location.js';

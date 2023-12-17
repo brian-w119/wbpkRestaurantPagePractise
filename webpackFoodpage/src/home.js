@@ -8,16 +8,16 @@ export default function renderHomePage(){
     const container  = document.querySelector("#content");
     const homeButton = document.createElement("button");
 
-    buttonCreate();
+    homeButtonCreate();
     homeButton.addEventListener("click", () => {
         container.innerHTML = "";
         location();
         menu();
-        buttonCreate();
+        homeButtonCreate();
         basicLayout();
     });
 
-    function buttonCreate(){
+    function homeButtonCreate(){
         homeButton.type  = "button";
         homeButton.style.backgroundColor = "lightBlue";
         homeButton.innerHTML = "Home";

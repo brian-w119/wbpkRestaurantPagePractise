@@ -1,7 +1,7 @@
 
 import basicLayout from "./pageLoad.js";
 import menu from './menu.js';
-import buttonCreate from './home.js'
+import homeButtonCreate from './home.js';
 
 export default function location(){
     
@@ -13,7 +13,7 @@ export default function location(){
         //creates buttons
         createLocationButton();
         menu();
-        buttonCreate();
+        homeButtonCreate();
 
         //creates and positions map
         const locationMap = document.createElement("img");
@@ -25,7 +25,7 @@ export default function location(){
         container.appendChild(locationMap);
 
         const text = document.createElement("p");
-        text.innerHTML = "We are located along the A4 of coast in Port Antonio.";
+        text.innerHTML = "We are located along the A4 on coast in Port Antonio.";
         container.appendChild(text);
 
     });
